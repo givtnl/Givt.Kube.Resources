@@ -1,0 +1,18 @@
+﻿services: 
+  vaultwarden:
+    build:
+      context: ./Vaultwarden
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 13371:80
+
+  slackbot:
+    build: 
+      context: ./Slackbot
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 13372:8080
+volumes:
+  vaultwarden_data:

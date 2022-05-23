@@ -1,0 +1,17 @@
+{
+    "name": "givt-slack-service",
+    "version": "0.0.1",
+    "description": "A basic slack service for a few commands",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "@slack/bolt": "^3.11.1",
+        "@slack/web-api": "^6.7.1",
+        "dotenv": "^16.0.1"
+    },
+    "repository": {
+        "url": ""
+    }
+}
